@@ -1,5 +1,8 @@
 
-Verilog Code for 2-bit Full Adder :
+[Verilog Code](#1 - Verilog Code for 2-bit Full Adder)
+(#2 - Test Bench for 2-bit Full Adder)
+
+#1. Verilog Code for 2-bit Full Adder :
 
 module fullAdder (sum_FA, carry_FA, a, b, c);
 
@@ -57,3 +60,4 @@ Simulation Screenshots :
 ![Screenshot (278)](https://user-images.githubusercontent.com/110777645/197330423-5af1bf5a-e57d-4519-b439-e07abbea3dff.png)
 ![Screenshot (276)](https://user-images.githubusercontent.com/110777645/197330426-1de989d4-e2a6-421d-ad7b-76377e71dcd8.png)
 
+Syntax Used in Code :
