@@ -65,7 +65,7 @@ Simulation Screenshots :
 
 # 3 .Syntax Used
 
-# 3.1. Design Code :
+## 3.1. Design Code :
 
 In this code, the module for the full adder is first defined. It is declared by the line
 "module fullAdder (sum_FA, carry_FA, a, b, c);" and it contains the list of outputs and inputs within paranthesis. Inside the module, the keywords "input" and "output" are used to classify the ports as input and output. The signals which are intermediate results inside the module are declared under "wire" datatype.
@@ -79,7 +79,7 @@ Now at the end of the full adder module, an "endmodule" statement is included.
 Similar to the module of full adder, a half adder module is declared and defined
 
 
-# 3.2. Test Bench :
+## 3.2. Test Bench :
 
 In the test bench, a separate module is created to test our DUT. This module need not contain a list of input and outputs as it is just a test file.
 The inputs to the DUT module are declared as register data type - as the input value has to be stored until it is changed - and the output variables of the DUT module are declared as wires - as their values have to be calculated continuously.
