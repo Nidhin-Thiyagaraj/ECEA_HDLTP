@@ -1,6 +1,6 @@
 
-[Verilog Code](#1 - Verilog Code for 2-bit Full Adder)
-(#2 - Test Bench for 2-bit Full Adder)
+[Design Code](#1 - Verilog Code for 2-bit Full Adder)
+[Test Bench](#2 - Test Bench for 2-bit Full Adder)
 
 #1. Verilog Code for 2-bit Full Adder :
 
@@ -26,7 +26,7 @@ and A1 (carry_HA, a, b);
 
 endmodule
 
-Verilog Code for Test Bench :
+#2. Verilog Code for Test Bench :
 
 module fullAdder_tb;
 
