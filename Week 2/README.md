@@ -1,11 +1,11 @@
-2-bit Full Adder
+# 2-bit Full Adder
 
 CONTENTS :
 1. [Design Code](#1-design-code)
 2. [Test Bench](#2-test-bench)
 3. [Syntax Used](#3-syntax-used)
 
-#1. Design Code :
+#1 . Design Code :
 
 module fullAdder (sum_FA, carry_FA, a, b, c);
 
@@ -29,7 +29,7 @@ and A1 (carry_HA, a, b);
 
 endmodule
 
-#2. Test Bench :
+#2 . Test Bench :
 
 module fullAdder_tb;
 
@@ -63,7 +63,7 @@ Simulation Screenshots :
 ![Screenshot (278)](https://user-images.githubusercontent.com/110777645/197330423-5af1bf5a-e57d-4519-b439-e07abbea3dff.png)
 ![Screenshot (276)](https://user-images.githubusercontent.com/110777645/197330426-1de989d4-e2a6-421d-ad7b-76377e71dcd8.png)
 
-#3.Syntax Used :
+#3 .Syntax Used :
 
 #3.1. Design Code :
 
