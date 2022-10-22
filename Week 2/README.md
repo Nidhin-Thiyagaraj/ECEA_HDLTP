@@ -1,5 +1,5 @@
 
-[Design Code](#1 - Verilog Code for 2-bit Full Adder)
+1. [Design Code](#1-design-code)
 [Test Bench](#2 - Test Bench for 2-bit Full Adder)
 
 #1. Verilog Code for 2-bit Full Adder :
