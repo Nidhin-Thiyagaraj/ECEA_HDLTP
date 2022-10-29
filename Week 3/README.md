@@ -1,6 +1,11 @@
 
 # 2-bit Full Adder using Gate Level, Behavioural and Data Flow modelling styles
 
+1. [Modelling Styles in Verilog]
+2. [Gate Level implementation of Full Adder]
+3. [Behavioural implementation of Full Adder]
+4. [Data Flow Implementation]
+
 # 1. Modelling Styles in Verilog
 
 ## Gate-Level Modelling  :
