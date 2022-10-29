@@ -5,6 +5,7 @@
 2. [Gate Level implementation of Full Adder](#2-gate-level-implementation-of-full-adder)
 3. [Behavioural implementation of Full Adder](#3-behavioural-implementation-of-full-adder)
 4. [Data Flow Implementation](#4-data-flow-implementation)
+5. [Test Bench Code](#5-test-bench-code)
 
 # 1. Modelling Styles in Verilog
 
@@ -119,3 +120,31 @@ endmodule
 
 ![DataFlow - Schematic](https://user-images.githubusercontent.com/110777645/198817277-0bb5ea95-730f-4321-9cd4-108a5e46d385.png)
 ![DataFlow - Simulation](https://user-images.githubusercontent.com/110777645/198817276-b1123140-8e3a-492d-b65d-17e99bc5e8a3.png)
+
+# 5. Test Bench Code
+
+module fullAdder_tb;
+
+	reg a, b, c;
+	wire sum, carry;
+
+	fullAdder FA1 (.sum_FA(sum), .carry_FA(carry), .a(a), .b(b), .c(c));
+	
+	initial
+		begin
+			a = 1'b0;
+			b = 1'b0;
+			c = 1'b0;
+		end
+	
+	always
+		#5 c = ~c;
+	always
+		#10 b = ~b;
+	always
+		#20 a = ~a;
+
+	initial $monitor( $time, "a = %b, b = %b, c = %b, Sum = %b, Carry = %b ", a, b, c, sum, carry);
+	initial #40 $finish;
+
+endmodule
