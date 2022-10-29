@@ -17,7 +17,7 @@ This type of modelling is used when theexpressions for boolean operations perfor
 ## Behavioural Modelling :
 
 Behavioural modelling is used to model both combinational and sequential circuits. It makes use of inital and always statements to assign values to registers.
-It is used when modelling sequential and complex combinational circuits.
+It is used to model sequential and complex combinational circuits. All sequential circuits are modelled using this technique.
 
 # 2. Gate Level implementation of Full Adder
 
