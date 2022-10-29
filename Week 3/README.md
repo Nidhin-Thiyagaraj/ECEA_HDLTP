@@ -1,7 +1,25 @@
 
 # 2-bit Full Adder using Gate Level, Behavioural and Data Flow modelling styles
 
-# 1. Gate Level implementation of Full Adder
+# 1. Modelling Styles in Verilog
+
+## Gate-Level Modelling  :
+
+Gate level modelling is used to model combinational circuits using basic gates and by instantiating other user-defined modules.
+Basic gates that can be used in gate-level modelling include and, nor, not, nand, or, xor and xnor.
+Gate-level modelling is mostly used to model the lowest level of modules in verilog whose 
+
+## Data Flow Modelling   :
+
+Data flow modelling is also used to model combinational circuits. In this style of modelling basic assignment is carried out by using the assign statement, called as continuous assignment. In continuous assignment, the values are assigned to variables of net data-type.
+This type of modelling is used when theexpressions for boolean operations performed by the modules is known.
+
+## Behavioural Modelling :
+
+Behavioural modelling is used to model both combinational and sequential circuits. It makes use of inital and always statements to assign values to registers.
+It is used when modelling sequential and complex combinational circuits.
+
+# 2. Gate Level implementation of Full Adder
 
 module fullAdder (sum_FA, carry_FA, a, b, c);
 
@@ -27,7 +45,7 @@ endmodule
 ![Screenshot (277)](https://user-images.githubusercontent.com/110777645/198817089-581876fe-544f-4659-8c3a-32c34421ed17.png)
 ![Screenshot (276)](https://user-images.githubusercontent.com/110777645/198817085-b0d3f46f-a8b0-4d5a-8f60-6b9e90cc84bc.png)
 
-# 2. Behavioural implementation of Full Adder
+# 3. Behavioural implementation of Full Adder
 
 module fullAdder (sum_FA, carry_FA, a, b, c);
 
@@ -82,7 +100,7 @@ endmodule
 ![Screenshot (283)](https://user-images.githubusercontent.com/110777645/198817301-99978fab-9b2b-42ac-afc0-7ee9ec55efb9.png)
 ![Screenshot (282)](https://user-images.githubusercontent.com/110777645/198817305-4b49a4ea-7ac5-42ad-8288-cf1ece37f88d.png)
 
-# 3. Data Flow Implementation
+# 4. Data Flow Implementation
 
 module fullAdder (sum_FA, carry_FA, a, b, c);
 
