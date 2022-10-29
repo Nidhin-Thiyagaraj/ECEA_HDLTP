@@ -5,17 +5,22 @@
 
 module fullAdder (sum_FA, carry_FA, a, b, c);
 
-output sum_FA, carry_FA; input a, b, c; wire sum_HA1, carry_HA1, carry_HA2;
+	output sum_FA, carry_FA; 
+	input a, b, c; 
+	wire sum_HA1, carry_HA1, carry_HA2;
 
-halfAdder H1 (sum_HA1, carry_HA1, a, b); halfAdder H2 (sum_FA, carry_HA2, sum_HA1, c); or O1 (carry_FA, carry_HA1, carry_HA2);
+	halfAdder H1 (sum_HA1, carry_HA1, a, b);
+	halfAdder H2 (sum_FA, carry_HA2, sum_HA1, c);
+	or O1 (carry_FA, carry_HA1, carry_HA2);
 
 endmodule
 
 module halfAdder (sum_HA, carry_HA, a, b);
 
-output sum_HA, carry_HA; input a, b;
+	output sum_HA, carry_HA;
+	input a, b;
 
-xor X1 (sum_HA, a, b); and A1 (carry_HA, a, b);
+	xor X1 (sum_HA, a, b); and A1 (carry_HA, a, b);
 
 endmodule
 
