@@ -35,7 +35,7 @@ Verilog Code :
 
           endmodule
 
-         ![half adder](https://user-images.githubusercontent.com/110777645/200132849-9c8d1158-8588-454d-bf66-ed74db1e176d.png)
+![half adder](https://user-images.githubusercontent.com/110777645/200132849-9c8d1158-8588-454d-bf66-ed74db1e176d.png)
 
 # Full Adder
 
